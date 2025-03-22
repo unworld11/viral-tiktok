@@ -1,13 +1,35 @@
-assets
-# dall-e generation outputs
-outputs/
+# Large files and binary files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
 *.pt
-cache
-data/coco2014_val3w_images
-data/*.tar.gz
+*.pth
+*.th
+*.ckpt
+*.bin
+*.tar.gz
+*.zip
+*.gz
+*.rar
+*.7z
+*.sh
 
+# Directories to exclude
+assets/
+outputs/
+cache/
+data/
 tmp_test*/
-*.th 
+vae_models/
+log/
+test_results/
+downloaded_files/
+pretrained_weights/
+model_lib/ControlNet/annotator/ckpts/
+example_data/
+tiktok_test_log/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -15,18 +37,9 @@ __pycache__/
 *$py.class
 */__pycache__/
 
-# dataset-related, pre-trained models,
-vae_models/vqgan
-vae_models/*.gz
-vae_models/*.pt
-vae_models/*vqgan
-*.pt
-*.pth 
-
-# log files
-log/*.log
-test_results
+# Logs and errors
 err*
+*.log
 
 
 # C extensions
